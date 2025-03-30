@@ -1,12 +1,34 @@
-# React + Vite
+Overview:
+This is a React + Redux project that allows users to submit queries, store them in Redux, and display the results using a bar chart (powered by recharts). It also includes a loading indicator to enhance the user experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features:
 
-Currently, two official plugins are available:
+Redux State Management for storing queries & results.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Recharts for visualizing query results.
 
-## Expanding the ESLint configuration
+Loading Indicator to show when data is being processed.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Responsive UI with Tailwind CSS.
+
+
+Usage:
+
+1. Submit a Query
+Enter a query in the input field and click Submit.
+The query is stored in Redux and displayed in the Query History.
+A simulated API call (2s delay) generates mock data.
+
+2. View Results
+Once the API call completes, results appear in a bar chart.
+The chart updates dynamically for each submitted query.
+
+3. Query History
+Displays all previously submitted queries from Redux state.
+
+Key Technologies Used:
+Technology             Purpose
+React                  UI Components
+Redux Toolkit          State Management
+Recharts               Data Visualization
+Tailwind CSS           Styling
